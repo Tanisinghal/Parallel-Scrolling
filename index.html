@@ -26,5 +26,32 @@
        <h2>Parallel scrolling Effects</h2>
        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci dolore esse obcaecati nostrum, ipsam ducimus eum possimus delectus doloribus! Iste, quod! Quidem, maiores quae blanditiis deserunt aliquid nam magni consectetur iure. Obcaecati natus neque id nesciunt delectus error nam molestiae illum, necessitatibus, voluptate possimus voluptatibus earum omnis fuga soluta totam amet voluptatum sunt itaque quia assumenda voluptatem? In quo velit eligendi nisi voluptatibus sint tenetur pariatur, libero ab ea? Dolorem, iure facere explicabo numquam, natus perferendis fugiat debitis magni error iusto recusandae veniam nihil alias suscipit quia corrupti. Eos eum omnis soluta eveniet reprehenderit asperiores autem velit. Culpa deserunt eveniet omnis hic nihil, dolorum similique dignissimos dolores minus iure consequatur incidunt corrupti non, odio ratione iusto quas labore optio! Optio rem accusantium distinctio dolorem, aperiam iure numquam ullam facere quod voluptates ipsa natus ut officiis molestiae at reprehenderit. Adipisci fuga eos et eaque nobis architecto, saepe, laborum, error numquam omnis ipsam explicabo. Delectus nisi possimus, itaque, rerum veritatis, saepe molestiae labore asperiores animi eveniet quibusdam minus consequuntur? Beatae, omnis quas, ex fuga architecto accusamus fugit nam enim unde est facilis minima facere dignissimos? Ea facilis rerum ipsa ex cumque architecto consequatur optio! Ratione perspiciatis quidem itaque, temporibus, laudantium eius nisi iure corporis consequatur vero incidunt quisquam earum esse. Ad ut modi praesentium expedita placeat quo facilis fuga vitae perspiciatis magni repudiandae tenetur pariatur officia minima in, totam, atque dolores ullam non? Saepe rem aliquid neque. Perferendis alias aliquam architecto adipisci necessitatibus, et quae quam saepe eveniet animi iure autem recusandae eaque eos laboriosam vel similique asperiores illo. Praesentium illo neque assumenda fugit iusto velit, vel officiis enim temporibus sapiente iure. Cumque similique ipsum assumenda eveniet! Delectus facilis odio accusamus vel veritatis nam voluptate dolores, earum magni id illo eaque in molestias nesciunt reprehenderit corporis consectetur sint inventore tempore architecto, voluptas non aliquid! Iste nemo ad voluptatem cum suscipit porro similique necessitatibus dolorem, dolores commodi sapiente possimus, quisquam quis autem voluptas hic quos. Odit assumenda eos, placeat odio aliquam expedita a animi rem officia recusandae enim eaque minus nesciunt voluptate sint sed corporis. Facere sequi vero ducimus cum recusandae. Laborum labore eum vitae excepturi voluptate accusamus laudantium nulla ducimus molestias, consequatur odit beatae veniam sapiente distinctio officiis eligendi quas sit et ad suscipit aperiam fugiat rerum. Quam cupiditate exercitationem iste, non asperiores hic ipsam! At repudiandae tempora, molestiae quaerat soluta consequuntur unde fugit laborum quis nam dolor aut! Numquam dolorem expedita repellendus facere aliquid ex, cum aliquam sequi suscipit voluptatum quaerat, tempore maxime magni animi dolorum nobis? Possimus sit itaque tempora deleniti dolores praesentium quo esse, vel iure laborum! Ab cupiditate veniam iusto voluptatibus ipsa? Beatae explicabo commodi enim veniam! Officiis, culpa et tempora saepe nisi quod eos blanditiis vel perferendis molestias ut nostrum illo quae numquam? Eos temporibus, deleniti a nemo molestiae quos. Explicabo quaerat recusandae eaque repellendus accusamus suscipit minus cum fugiat nemo quas corporis nesciunt ipsa sit iusto, veniam excepturi perspiciatis dignissimos ipsum ducimus sint doloribus dolor voluptates? Enim voluptatem iusto deserunt, consequatur vel rerum reprehenderit harum quisquam?</p>
     </div>
+    
+    <script>
+      let text = document.getElementById("text");
+      let bird1 = document.getElementById("bird1");
+      let bird2 = document.getElementById("bird2");
+      let btn = document.getElementById("btn");
+      let rocks = document.getElementById("rocks");
+      let forest = document.getElementById("forest");
+      let water = document.getElementById("water");
+      let header = document.getElementById("header");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+
+        text.style.top = 50 + value * -0.5 + "%";
+        bird1.style.top = value * -1.5 + "px";
+        bird1.style.left = value * 2 + "px";
+        bird2.style.top = value * -1.5 + "px";
+        bird2.style.left = value * -6 + "px";
+        btn.style.marginTop = value * 1.5 + "px";
+        rocks.style.top = value * -0.12 + "px";
+        forest.style.top = value * 0.25 + "px";
+        header.style.top = value * 0.5 + "px";
+        water.style.bottom = value * 0.12 + "px";
+      });
+    </script>
+    
 </body>
 </html>
