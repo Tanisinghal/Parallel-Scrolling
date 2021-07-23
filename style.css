@@ -60,7 +60,7 @@ body {
 section {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +108,7 @@ section #text span {
     text-decoration: none;
     display: inline-block;
     padding: 8px 30px;
-    background: #ff0;
+    background: #fff;
     color: #094b65;
     font-size: 1.2rem;
     font-weight: 500;
