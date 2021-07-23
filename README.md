@@ -1,3 +1,1 @@
 #Tanisinghal
-# Tanisinghal
-# Parallel Scrolling
